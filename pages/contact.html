@@ -2,26 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact page</title>
+    <title>Contact Us - Foody</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <br><br>
-    <b><h1>Contact us</h1>
-    <h4> Please fill the form in a decent manner</h4><br>
+    <header>
+        <h1>Foody <img src="../images/foodie.png" alt="Foody Logo" height="35"></h1> <hr>
+        <nav>
+            <a href="../index.html">Home</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="./restaurant_listing.html">Restaurants</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="./about.html">About</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="">T&C</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="">Privacy policy</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="./faq.html">FAQ</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <b>Contact</b>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <h1>Get in Touch with Us!</h1>
+            <p>We’re here to help! Whether you have a question about your order, our menu, or anything else, our team is ready to answer all your questions.</p>
+        </div>
+        <hr>
+        <div>
+            <h2>Contact Information</h2>
+            <p><b><u>Email:</u></b> <a href="mailto:support@foody.com">support@foody.com</a></p>
+            <p><b><u>Phone:</u></b> <a href="tel:+18001233663">+911234567890</a></p>
+            <p><b><u>Address:</u></b> professor chowk, Ahmednagar City, 414003</p>
+        </div>
+        <hr>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form > 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your name"><br> <br>
 
-    <form >
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="address">Address:</label><br>
-        <input type="address" id="address" name="Address"><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-        <input type="submit" value="Submit">
-    </b> </form>
-     
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Email"><br> <br>
+
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="1234560789"><br> <br>
+
+                <label for="order">Order Number (Optional):</label>
+                <input type="text" id="order" name="order" placeholder="456321"><br> <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br> <br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <hr>
+        
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.749284555226!2d74.73113349548092!3d19.118651704626142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcba80d06daee1%3A0xc94a9db2329aa54c!2sProfessor%20Colony%2C%20Savedi%2C%20Ahmednagar%2C%20Maharashtra%20414003!5e0!3m2!1sen!2sin!4v1720544377281!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    
 </body>
 </html>
